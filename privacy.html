@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · 일정메모</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --text:#1f1f1d; --muted:#6b6b66; --accent:#2f6fde; --border:#e3e3df; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --card:#1e1e1c; --text:#ececea; --muted:#9a9a94; --accent:#6b9bff; --border:#353532; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:'Pretendard','Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif; line-height:1.75; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  h2 { font-size:18px; margin:28px 0 8px; }
+  ul { padding-left:20px; }
+  a { color:var(--accent); }
+  hr { border:none; border-top:1px solid var(--border); margin:40px 0; }
+  code { background:var(--card); border:1px solid var(--border); border-radius:4px; padding:0 4px; font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← 일정메모</a></p>
+  <h1>개인정보처리방침</h1>
+  <p class="sub">일정메모 (ScheduleMemo) · 시행일 2026년 9월 30일</p>
+
+  <p>일정메모(이하 "앱")는 사용자 본인의 컴퓨터에서만 동작하는 개인용 데스크톱 앱입니다. 앱 개발자는 별도의 서버를 운영하지 않으며, 사용자의 데이터를 수집하거나 보관하지 않습니다.</p>
+
+  <h2>1. 접근하는 Google 사용자 데이터</h2>
+  <ul>
+    <li><b>Google 캘린더</b> (<code>calendar</code>): 캘린더 목록과 일정을 읽어 앱에 표시하고, 사용자가 요청할 때 일정을 추가·수정·삭제합니다.</li>
+    <li><b>Google Drive – 이 앱이 만든 파일만</b> (<code>drive.file</code>): 사용자의 Drive 에 "일정메모 (ScheduleMemo)" 폴더를 만들고, 메모를 파일로 저장·동기화합니다. 이 앱이 만들지 않은 Drive 파일은 볼 수 없습니다.</li>
+    <li><b>기본 계정 정보</b> (<code>openid</code>, <code>email</code>): 어떤 계정으로 로그인했는지 앱 화면에 표시하기 위해서만 사용합니다.</li>
+  </ul>
+
+  <h2>2. 데이터 사용 목적과 저장 위치</h2>
+  <ul>
+    <li>위 데이터는 오직 사용자에게 일정과 메모 기능을 제공하는 데만 사용합니다.</li>
+    <li>일정은 사용자의 Google 캘린더에, 메모는 사용자의 컴퓨터와 사용자 본인의 Google Drive 에만 저장됩니다.</li>
+    <li>Google 로그인 정보(토큰)는 사용자의 컴퓨터에 Windows 암호화 기능(DPAPI)으로 암호화해 저장하며, 외부로 보내지 않습니다.</li>
+    <li>광고, 분석, 판매 목적으로 사용하거나 제3자에게 제공하지 않습니다.</li>
+  </ul>
+
+  <h2>3. 선택 기능: Claude(AI) 연동</h2>
+  <ul>
+    <li>사용자가 직접 켠 경우에만 동작합니다.</li>
+    <li><b>앱 안 AI 기능</b>: 사용자가 버튼을 누를 때, 해당 메모 또는 해당 기간의 일정·메모 내용이 사용자 본인의 API 키로 Anthropic 에 전송되어 처리됩니다. Anthropic 의 데이터 처리는 <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic 개인정보처리방침</a>을 따릅니다.</li>
+    <li><b>Claude 데스크톱 연동</b>: 사용자가 Claude 데스크톱에 연결한 경우, 사용자가 Claude 에게 요청할 때 필요한 일정·메모가 사용자의 Claude 계정으로 전달됩니다.</li>
+  </ul>
+
+  <h2>4. 데이터 삭제와 권한 해제</h2>
+  <ul>
+    <li>앱의 설정 → "연결 해제"를 누르면 로그인 정보가 삭제되고 Google 접근 권한이 취소됩니다.</li>
+    <li><a href="https://myaccount.google.com/permissions" rel="noopener">Google 계정 → 서드 파티 액세스</a>에서도 언제든 권한을 취소할 수 있습니다.</li>
+    <li>Drive 의 "일정메모 (ScheduleMemo)" 폴더를 지우면 동기화된 메모가 삭제됩니다. 앱을 제거하면 컴퓨터에 저장된 데이터도 삭제할 수 있습니다 (<code>%APPDATA%\ScheduleMemo</code>).</li>
+  </ul>
+
+  <h2>5. Google API 서비스 사용자 데이터 정책 준수</h2>
+  <p>일정메모가 Google API 로부터 받은 정보를 사용하고 다른 앱으로 전송하는 것은 제한적 사용(Limited Use) 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+
+  <h2>6. 변경 및 문의</h2>
+  <p>이 방침이 바뀌면 이 페이지에 게시합니다. 문의는 이 페이지가 호스팅된 GitHub 저장소를 통해 할 수 있습니다.</p>
+
+  <hr>
+
+  <h1 style="font-size:22px">Privacy Policy (English)</h1>
+  <p>ScheduleMemo ("the app") is a personal desktop app that runs only on the user's own computer. The developer operates no servers and does not collect or store user data.</p>
+  <ul>
+    <li><b>Google data accessed:</b> Google Calendar (<code>calendar</code>) to display and, on the user's request, create/edit/delete events; Google Drive files created by this app only (<code>drive.file</code>) to store and sync the user's notes; basic account info (<code>openid</code>, <code>email</code>) to show which account is signed in.</li>
+    <li><b>Use and storage:</b> Data is used solely to provide the app's calendar and note features to the user. Events stay in the user's Google Calendar; notes are stored on the user's computer and in the user's own Google Drive. OAuth tokens are encrypted locally with Windows DPAPI and never sent elsewhere. Data is never sold, used for advertising, or shared with third parties.</li>
+    <li><b>Optional AI features:</b> Only when enabled and invoked by the user, the relevant note or events are sent to Anthropic using the user's own API key, or to the user's own Claude desktop app.</li>
+    <li><b>Deletion:</b> "Disconnect" in the app's settings deletes local tokens and revokes access; access can also be revoked at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    <li><b>Limited Use:</b> ScheduleMemo's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+  </ul>
+</main>
+</body>
+</html>

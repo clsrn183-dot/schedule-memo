@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>일정메모 (ScheduleMemo)</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --text:#1f1f1d; --muted:#6b6b66; --accent:#2f6fde; --border:#e3e3df; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --card:#1e1e1c; --text:#ececea; --muted:#9a9a94; --accent:#6b9bff; --border:#353532; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:'Pretendard','Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif; line-height:1.7; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:30px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 32px; }
+  section { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:16px; }
+  h2 { font-size:18px; margin:0 0 8px; }
+  ul { margin:0; padding-left:20px; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:14px; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>일정메모 <span style="font-weight:400;color:var(--muted)">ScheduleMemo</span></h1>
+  <p class="sub">Google 캘린더 일정과 메모를 한 화면에서 관리하고, 여러 컴퓨터에서 함께 쓰는 개인용 Windows 앱입니다.</p>
+
+  <section>
+    <h2>주요 기능</h2>
+    <ul>
+      <li>Google 캘린더 일정 보기·추가·수정 (월/주/일 보기)</li>
+      <li>날짜와 태그를 붙일 수 있는 Markdown 메모</li>
+      <li>메모를 사용자 본인의 Google Drive 에 저장해 데스크톱·노트북 간 자동 동기화</li>
+      <li>Claude(AI)와 연동해 일정·메모 정리 (사용자가 직접 켠 경우에만)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Google 계정 데이터 사용</h2>
+    <p>
+      이 앱은 사용자가 로그인한 Google 계정의 <b>캘린더</b>(일정 표시·편집)와 <b>Drive 중 이 앱이 만든 파일</b>(메모 저장)에만 접근합니다.
+      모든 처리는 사용자의 컴퓨터에서 이루어지며, 개발자의 서버로 데이터를 보내지 않습니다.
+      자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 참고하세요.
+    </p>
+  </section>
+
+  <section>
+    <h2>About (English)</h2>
+    <p>
+      ScheduleMemo is a personal Windows desktop app that shows and edits the user's Google Calendar events and keeps
+      Markdown notes synced through the user's own Google Drive. It runs entirely on the user's computer and does not send
+      data to any developer-operated server. See the <a href="privacy.html">Privacy Policy</a>.
+    </p>
+  </section>
+
+  <footer><a href="privacy.html">개인정보처리방침 / Privacy Policy</a></footer>
+</main>
+</body>
+</html>
